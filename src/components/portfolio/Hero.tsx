@@ -63,10 +63,10 @@ export const Hero = () => {
                 <span aria-hidden>↓</span>
               </a>
               <a
-                href="#contact"
+                href="#hire-me"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-foreground/20 text-sm font-medium hover:border-foreground transition-colors duration-300"
               >
-                Get in touch
+                Hire me
               </a>
             </div>
           </motion.div>
