@@ -123,7 +123,7 @@ export const ContactForm = () => {
             <div className="mt-10 space-y-3 text-sm text-cream/60">
               <div className="flex items-center gap-3">
                 <span className="w-8 h-px bg-terracotta" />
-                <span>Currently accepting Q1 — Q2 2026 projects</span>
+                <span>Available for onsite, freelance or remote</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="w-8 h-px bg-terracotta" />

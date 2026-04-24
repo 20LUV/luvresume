@@ -57,7 +57,7 @@ export const About = () => {
           <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
             {[
               { num: "20+", label: "Projects shipped" },
-              { num: "3+", label: "Years designing" },
+              { num: "1+", label: "Years designing" },
               { num: "100%", label: "Care per pixel" },
             ].map((s) => (
               <div key={s.label}>
