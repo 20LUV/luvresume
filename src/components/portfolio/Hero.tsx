@@ -12,7 +12,7 @@ export const Hero = () => {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-cream-deep/60 text-xs uppercase tracking-[0.2em] text-muted-foreground mb-8"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-terracotta animate-pulse" />
-          Available for freelance · 2026
+          Available for onsite, freelance or remote
         </motion.div>
 
         <h1 className="font-display text-[14vw] md:text-[10vw] lg:text-[9rem] leading-[0.9] font-light tracking-tight text-balance">
