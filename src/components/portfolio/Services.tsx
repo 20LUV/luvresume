@@ -10,69 +10,52 @@ import {
   Sparkles,
   FileText,
 } from "lucide-react";
-import workTimer from "@/assets/projects/work-timer.jpg";
-import financialSanctuary from "@/assets/projects/financial-sanctuary.jpg";
-import findDoctor from "@/assets/projects/find-doctor.jpg";
-import ngo from "@/assets/projects/ngo.jpg";
-import memoneet from "@/assets/projects/memoneet.jpg";
-import grocers from "@/assets/projects/grocers.jpg";
-import ecommerce from "@/assets/projects/ecommerce.jpg";
-import galamine from "@/assets/projects/galamine.jpg";
 
 const services = [
   {
     icon: Rocket,
     title: "User-Centered UI/UX Design",
     desc: "Clean, modern, intuitive designs focused on real user needs and business goals.",
-    image: workTimer,
   },
   {
     icon: Smartphone,
     title: "Web & Mobile App Design",
     desc: "Responsive websites, mobile apps, dashboards, SaaS products and landing pages.",
-    image: findDoctor,
   },
   {
     icon: Target,
     title: "Improve User Experience",
     desc: "Simplify journeys, improve usability and increase customer satisfaction.",
-    image: memoneet,
   },
   {
     icon: Palette,
     title: "High-Fidelity UI Design",
     desc: "Pixel-perfect interfaces in Figma with strong visual hierarchy and consistency.",
-    image: financialSanctuary,
   },
   {
     icon: Puzzle,
     title: "Wireframing & Prototyping",
     desc: "From low-fi wireframes to clickable prototypes for fast idea validation.",
-    image: ecommerce,
   },
   {
     icon: LayoutGrid,
     title: "Design Systems",
     desc: "Reusable components and style guides for faster, consistent product growth.",
-    image: galamine,
   },
   {
     icon: TrendingUp,
     title: "Business-Focused Solutions",
     desc: "Designs that lift conversions, engagement and product performance.",
-    image: grocers,
   },
   {
     icon: Sparkles,
     title: "Brand & Logo Design",
     desc: "Memorable identities, logo systems and visual language for growing brands.",
-    image: ngo,
   },
   {
     icon: FileText,
     title: "Brochures, Flyers & CRM",
     desc: "Print collateral, marketing material and tailored CRM system design.",
-    image: workTimer,
   },
 ];
 
@@ -109,34 +92,22 @@ export const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="group relative bg-cream hover:bg-cream-deep transition-colors duration-500 flex flex-col"
+                className="group relative bg-cream p-8 md:p-10 hover:bg-cream-deep transition-colors duration-500"
               >
-                {/* Visual */}
-                <div className="relative aspect-[16/10] overflow-hidden bg-cream-deep">
-                  <img
-                    src={s.image}
-                    alt={`${s.title} — example work`}
-                    loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700 ease-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-cream/90 backdrop-blur-sm flex items-center justify-center group-hover:bg-terracotta group-hover:text-cream transition-colors duration-500">
+                <div className="flex items-start justify-between mb-8">
+                  <div className="w-12 h-12 rounded-2xl bg-ink text-cream flex items-center justify-center group-hover:bg-terracotta transition-colors duration-500">
                     <Icon className="w-5 h-5" strokeWidth={1.75} />
                   </div>
-                  <span className="absolute top-4 right-4 font-display text-sm text-cream/90 tabular-nums">
+                  <span className="font-display text-sm text-muted-foreground tabular-nums">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                 </div>
-
-                {/* Copy */}
-                <div className="p-7 md:p-8 flex-1">
-                  <h3 className="font-display text-xl md:text-2xl font-medium tracking-tight leading-snug mb-3">
-                    {s.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {s.desc}
-                  </p>
-                </div>
+                <h3 className="font-display text-xl md:text-2xl font-medium tracking-tight leading-snug mb-3">
+                  {s.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {s.desc}
+                </p>
               </motion.div>
             );
           })}
