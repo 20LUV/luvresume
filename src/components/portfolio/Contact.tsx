@@ -31,7 +31,7 @@ export const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl"
+          className="max-w-5xl mx-auto text-center"
         >
           <p className="text-xs uppercase tracking-[0.3em] text-cream/50 mb-6">
             ✦ Let's Collaborate

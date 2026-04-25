@@ -37,9 +37,8 @@ export const About = () => {
             to ship products that feel right.
           </p>
 
-          <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
+          <div className="grid grid-cols-2 gap-6 pt-8 border-t border-border">
             {[
-              { num: "20+", label: "Projects shipped" },
               { num: "1+", label: "Years designing" },
               { num: "100%", label: "Care per pixel" },
             ].map((s) => (

@@ -55,10 +55,10 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.92, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-4 order-1 lg:order-2 relative mx-auto lg:mx-0 w-full max-w-xs lg:max-w-none"
+            className="lg:col-span-4 order-1 lg:order-2 relative w-full"
           >
             <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-warm opacity-40 blur-3xl pointer-events-none" />
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-border shadow-card">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[1.75rem] border border-border shadow-card">
               <img
                 src={profileImg}
                 alt="Portrait of Luv Takkar, UI/UX Designer"
@@ -68,12 +68,12 @@ export const Hero = () => {
               />
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink/50 to-transparent" />
             </div>
-            {/* Floating tag */}
+            {/* Floating tag — centered directly below the portrait */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
-              className="absolute -bottom-4 left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:-bottom-3 lg:-left-3 bg-ink text-cream text-[10px] uppercase tracking-[0.25em] px-4 py-2 rounded-full font-medium shadow-soft whitespace-nowrap"
+              className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-ink text-cream text-[10px] uppercase tracking-[0.25em] px-4 py-2 rounded-full font-medium shadow-soft whitespace-nowrap"
             >
               ✦ Luv Takkar
             </motion.div>
