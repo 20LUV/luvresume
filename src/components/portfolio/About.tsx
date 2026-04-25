@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import profileImg from "@/assets/luv-profile.jpg";
 
 export const About = () => {
   return (
@@ -18,22 +17,6 @@ export const About = () => {
           <h2 className="font-display text-5xl md:text-6xl font-light tracking-tight leading-[1]">
             A designer who <span className="italic text-terracotta">listens</span> first.
           </h2>
-
-          {/* Portrait */}
-          <div className="mt-10 relative max-w-sm">
-            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-warm opacity-30 blur-2xl pointer-events-none" />
-            <div className="relative overflow-hidden rounded-[1.75rem] border border-border shadow-soft aspect-[4/5]">
-              <img
-                src={profileImg}
-                alt="Portrait of Luv Takkar, UI/UX Designer"
-                loading="lazy"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
-              />
-            </div>
-            <div className="absolute -bottom-3 -right-3 bg-ink text-cream text-xs uppercase tracking-[0.2em] px-4 py-2 rounded-full font-medium shadow-soft">
-              ✦ That's me
-            </div>
-          </div>
         </motion.div>
 
         <motion.div
